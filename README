@@ -1,0 +1,13 @@
+Before you export annotations, please set corresponding params in keep_in_mind.rb:
+<code>
+TODO_LIST_ID  = '5921990'
+TODO_LIST_URL = 'http://unigate.basecamphq.com/todo_lists'
+USER = 'user'
+PASSWORD = 'password'
+</code>
+
+To export annotations into your Basecamp todo list just run:
+<code>rake notes:export</code>
+
+You can add rake invocation into crontab:
+<code>5 12 * * * sh -c 'cd ~/www/project && rake notes:export'</code>
