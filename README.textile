@@ -1,13 +1,20 @@
-Before you export annotations, please set corresponding params in keep_in_mind.rb:
+h1.Summary
+
+Keep In Mind is a Rails plugin which allows to export application notes into BaseCamp todo list.
+
+To export annotations just run: <code>rake notes:export</code>
+
+h1.Configuration
+
+Before you export annotations, please set the following params in keep_in_mind.rb:
 <pre><code>  TODO_LIST_ID  = '1234'
   TODO_LIST_URL = 'http://project.basecamphq.com/todo_lists'
   USER = 'user'
   PASSWORD = 'password'</code></pre>
 
-To export annotations into your Basecamp todo list just run: <code>rake notes:export</code>
+h2. Automation
 
-You can add rake invocation into crontab:
-
+You can add rake task invocation into crontab:
 <code>
   5 12 * * * sh -c 'cd ~/www/project && rake notes:export'
 </code>
