@@ -1,10 +1,10 @@
-h1.Summary
+h1. Summary
 
 Keep In Mind is a Rails plugin which allows to export application notes into BaseCamp todo list.
 
 To export annotations just run: <code>rake notes:export</code>
 
-h1.Configuration
+h1. Configuration
 
 Before you export annotations, please set the following params in keep_in_mind.rb:
 <pre><code>  TODO_LIST_ID  = '1234'
