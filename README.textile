@@ -4,7 +4,7 @@ Keep In Mind is a Rails plugin which allows to export application notes into Bas
 
 To export annotations just run: <code>rake notes:export</code>
 
-h1. Configuration
+h2. Configuration
 
 Before you export annotations, please set the following params in keep_in_mind.rb:
 <pre><code>  TODO_LIST_ID  = '1234'
@@ -14,7 +14,5 @@ Before you export annotations, please set the following params in keep_in_mind.r
 
 h2. Automation
 
-You can add rake task invocation into crontab:
-<code>
-  5 12 * * * sh -c 'cd ~/www/project && rake notes:export'
-</code>
+You can add the following line to crontab to invoke rake task from cron:
+<pre><code>5 12 * * * sh -c 'cd ~/www/project && rake notes:export'</code></pre>
