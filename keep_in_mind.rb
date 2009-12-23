@@ -1,4 +1,4 @@
-require 'activeresource'
+require 'active_resource'
 require 'source_annotation_extractor'
 
 module KeepInMind
